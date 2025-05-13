@@ -17,10 +17,25 @@ function SupervisorLogbookEntry() {
   return (
     <div className="p-4 bg-white rounded-2xl shadow mb-4">
       <h2 className="text-xl font-bold mb-2">Supervisor Logbook Entry</h2>
-      <textarea
-        className="w-full p-2 border rounded"
-        placeholder="Supervisor's logbook notes..."
-      ></textarea>
+      <form className="space-y-4">
+        <input
+          className="w-full p-2 border rounded"
+          type="date"
+          placeholder="Date"
+        />
+        <input
+          className="w-full p-2 border rounded"
+          type="text"
+          placeholder="Activity"
+        />
+        <textarea
+          className="w-full p-2 border rounded"
+          placeholder="Description of the task performed..."
+        ></textarea>
+        <button className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
+          Submit
+        </button>
+      </form>
     </div>
   );
 }
