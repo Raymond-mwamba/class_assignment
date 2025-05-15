@@ -30,7 +30,7 @@ function SupervisorLogbookEntry() {
         />
         <textarea
           className="w-full p-2 border rounded"
-          placeholder="Description of the task performed..."
+          placeholder="Description of the task performed on that day"
         ></textarea>
         <button className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
           Submit
