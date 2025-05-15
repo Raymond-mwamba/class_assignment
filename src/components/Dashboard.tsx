@@ -67,30 +67,12 @@ function SupervisorLogbookEntry() {
     }, 3000);
   };
   return (
-    <div className="p-4 bg-white rounded shadow mb-4">
-      <h2 className="fs-4 fw-bold mb-3">Logbook Entry</h2>
-      {isSubmitted ? (
-        <div className="alert alert-success mb-3">
-          Logbook entry submitted successfully!
-        </div>
-      ) : (
-        <form onSubmit={handleSubmit}>
-          <textarea
-            className="form-control mb-3"
-            placeholder="Supervisor's logbook notes..."
-            value={entry}
-            onChange={handleChange}
-            required
-            rows={4}
-          ></textarea>
-          <button 
-            type="submit" 
-            className="btn btn-primary"
-          >
-            Submit
-          </button>
-        </form>
-      )}
+    <div className="p-4 bg-white rounded-2xl shadow mb-4">
+      <h2 className="text-xl font-bold mb-2">Supervisor Logbook Entry</h2>
+      <textarea
+        className="w-full p-2 border rounded"
+        placeholder="Supervisor's logbook notes..."
+      ></textarea>
     </div>
   );
 }
